@@ -536,8 +536,4 @@ body {
   .timeline-content:hover {
     transform: none;
   }
-  
-  .profile-pic::after {
-    display: none;
-  }
 }
