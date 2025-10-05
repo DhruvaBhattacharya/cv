@@ -4,6 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  .main-content {
+    page-break-inside: avoid;
+  }
+  
+  .timeline-item {
+    page-break-inside: avoid;
+  }
 }
 
 :root {
@@ -112,18 +120,6 @@ body {
 
 .profile-pic:hover img {
   transform: scale(1.05);
-}
-
-.profile-pic::after {
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 30px;
-  height: 30px;
-  background: #10b981;
-  border-radius: 50%;
-  border: 4px solid var(--white);
 }
 
 .header-info {
@@ -543,13 +539,5 @@ body {
   
   .profile-pic::after {
     display: none;
-  }
-  
-  .main-content {
-    page-break-inside: avoid;
-  }
-  
-  .timeline-item {
-    page-break-inside: avoid;
   }
 }
